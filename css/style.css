@@ -9,15 +9,15 @@
 	background:#82ae46; ! important;
 }
 .container{
-	width: 1140px;
-	margin: 0 auto;
+	width: 1040px;
+	margin:2px auto;
 }
 /*******  font-family: 'Amatic SC', cursive;
     			font-family: 'Lora', serif;
     			font-family: 'Poppins', sans-serif;*/
    
 /*header sec css*/
-header{
+.header{
 	 width: 100%;
 }
 .Top-header{
@@ -29,7 +29,7 @@ header{
 }
 .Top-header span{
 	color: white;
-  font-family:'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
 	font-size: 12px;
 	letter-spacing: 1px;
 }
@@ -45,6 +45,7 @@ header{
 }
 .navber{
 	display: flex;
+	position: relative;
 	justify-content: space-between;
 	padding:20px 0px;
 }
@@ -55,8 +56,10 @@ header{
 	font-weight: bold;
 	color:#82ae46;
 	text-decoration: none;
-	font-weight:800 ;
+	font-weight:800;
+	padding-left:20px;
 }
+
 .logo a:hover{
 	background-color:white;
 	color: #e4b2d6;
@@ -154,6 +157,14 @@ header{
 	width: 100%;
 	padding:100px 0px ;
 }
+.features h1{
+	text-align: center;
+    font-size: 33px;
+    margin-bottom: 56px;
+    color: #2a9093e6;
+    font-family: 'Poppins';
+}
+
 .f-item-gallery{
 	display: grid;
 	text-align: center;
@@ -362,7 +373,7 @@ margin-bottom: 10px;
     color: white;
 }
 
-.Product-meta a i{
+.product-meta a i{
 	height: 40px;
 	width: 40px;
 	background-color:#82ae46;
@@ -370,7 +381,7 @@ margin-bottom: 10px;
 	border-radius: 100%;
 	line-height: 40px;
 }
-.Product-meta {
+.product-meta {
 	position: absolute;
 	bottom:20px;
 	left: 50%;
@@ -378,7 +389,7 @@ margin-bottom: 10px;
 	opacity: 0;
 	transition: 0.3s;
 }
-.Product-item:hover .Product-meta {
+.Product-item:hover .product-meta {
 	opacity:1;
 	transition: 0.3s;
 }
@@ -451,7 +462,9 @@ margin-bottom: 10px;
 .deal-content .price span:first-child{
 	color: #b3b3b3;
 }
+
 /*testimonial section css**/
+
 .testimonial{
 	width: 100%;
 	padding:100px 0px;
@@ -585,14 +598,14 @@ font-family: "Poppins", Arial, sans-serif;
 }
 
 .button{
-	  background-color: #82ae46;
+	background-color: #82ae46;
     font-size: 16px;
     padding: 16px 20px;
     text-decoration: none;
     color: #fff;
     font-family: initial;
 }
-footer{
+.footer{
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -674,4 +687,226 @@ font-family: "Poppins",Arial,sans-serif;
 }
 .copyright a{
 	text-decoration: none;
+}
+
+#preloader{
+	background:#fff url(../img/pulse.gif) no-repeat center; 
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+.hambuger-icon{
+	right: -238px;
+    transform: translateY(7px);
+	position: absolute;
+	right: 0;
+	top: 40%;
+	cursor: pointer;
+	display:none;
+}
+
+
+.mobile-menu{
+	background-color: white;
+	top: 0;
+	left: 0;
+	/*height: 100vh;*/
+	position: fixed;
+	text-align: center;
+	display: none;
+	width: 425px;
+	transform: translateX(-425px);
+}
+
+.mobile-menu ul {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50% -50%);
+	list-style: none;
+}
+
+.mobile-menu ul li{
+	margin:16px 0px;
+}
+#cross{
+	background: url(../img/close.png);
+	z-index: 9999;
+	top:20px;
+	right:20px;
+	width:38px;
+	height: 40px;
+	position: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: none;
+
+}
+
+
+ @media (max-width:767px){
+	.hambuger-icon{
+		display:block;
+	}
+	.Menus{
+		display: none;
+	}
+
+ }
+
+ .quickView-modal{
+ 	background: #2c060687;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display:none;
+ }
+ .quickView-modal .item-wrapper{
+ 	width: 450px;
+    transform: translateY(100px);
+    background-color: #dcd691;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    position: relative;
+ }
+  .quickView-modal .item-wrapper img{
+  	width: 215px;
+    border-radius: 100px;
+}
+  }
+
+ .quickView-modal .item-wrapper h2{
+  font-size: 25px;
+  margin-top: 5px;
+  font-weight: 600;
+  color: #000000;
+  font-family:"Poppins", Arial, sans-serif;
+  margin-bottom:11px;
+ }
+ .quickView-modal .item-wrapper p{
+    font-family: "Poppins", Arial, sans-serif;
+    background: #dcd691;
+    font-size: 18px;
+    margin-bottom: 9px;
+    color: black;
+ }
+ .quickView-modal .item-wrapper button{
+  background-color: #82ae46;
+    font-size: 20px;
+    padding: 9px 7px;
+    text-decoration: none;
+    color: #11140b;
+    font-family: cursive;
+ }
+ .clozebutton{
+ 	background: url(../img/close.png);
+	z-index: 9999;
+	top:20px;
+	right:20px;
+	width:38px;
+	height: 40px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+ }
+
+
+ /*/Slider Css Start///*/
+ * {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin-top:80px;
+  width: 70%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }

@@ -1,0 +1,300 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  for all mobile devices
+*/
+
+@media (max-width:750px{
+  .container{
+    width:70%;
+  }
+
+/* .navbar{
+    display: none;
+  }*/
+
+  .first, .middle, .last{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .top-header{
+    padding: 32px 0px;
+  }
+  .top-header span{
+    font-size: 9px;
+  }
+  .banner-content h1{
+    font-size: 44px;
+  }
+  .banner-content p{
+    font-size: 10px;
+  }
+  .f-item-gallery{
+    grid-template-columns: auto;
+  }
+  .f-item{
+    margin-bottom: 24px;
+  }
+  .item-content a{
+    padding: 7px 11px;
+    font-size: 11px;
+  }
+  .item-content img{
+    height: 200px;
+  }
+  .second h3{
+    font-size: 20px;
+  }
+  .second p{
+    font-size: 10px;
+  }
+  .fc-gallery{
+    display: flex;
+    flex-direction: column;
+  }
+  .fc-item{
+    flex-basis: 100%;
+  }
+  .product-gallery{
+    grid-template-columns: auto;
+  }
+  .deal-content{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 42px;
+  }
+  .ftco-gallery{
+    grid-template-columns: auto;
+  }
+  .ftco-item{
+    margin-bottom: 24px;
+  }
+  .ftco-item img{
+    width: 90px;
+  }
+  .form-row{
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+  }
+  .form-control{
+    margin-bottom: 16px;
+    padding: 9px;
+  }
+  .f-left h4{
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .f-left p{
+    font-size: 12px;
+    margin-bottom: -13px !important;
+  }
+  .footer-content{
+    flex-direction: column;
+  }
+  footer{
+    text-align: left;
+    margin: -42px;
+  }
+  .footer-1, .footer-2, .footer-3, .footer-4{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    text-align: left;
+    margin-left: 42px;
+  }
+  .footer-content h6{
+    font-size: 14px;
+  }
+  .footer-content p{
+    font-size: 12px;
+  }
+  .copyright{
+    font-size: 8px;
+    margin: 41px;
+  }
+  .f-menu li a{
+    font-size: 12px;
+  }
+  .f-menu li{
+    margin-bottom: 10px;
+  }
+  .di-flex{
+    display: block;
+    flex-direction: column;
+  }
+  .second{
+    background-position: inherit;
+  }
+  .features{
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  .product-gallery{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-top: -24px;
+  }
+  .products{
+    margin-top: -50px;
+  }
+  .product-item{
+    padding: 12px 6px;
+  }
+  .price span{
+    font-size: 12px;
+  }
+  .price span del{
+    font-size: 12px;
+  }
+  .product-item img{
+    width: 160px;
+  }
+  .product-item h6 a{
+    font-size: 12px;
+  }
+  .offer{
+    font-size: 12px;
+  }
+  .section-title h2{
+    font-size: 22px;
+  }
+  .section-title p{
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .section-title h6{
+    font-size: 14px;
+    line-height: 0.2;
+  }
+  .deal{
+    margin-top: -42px;
+  }
+  .testimonial{
+    margin-top: -50px;
+  }
+  .userimg{
+    margin-bottom: 16px;
+  }
+  .testimonial-item p{
+    font-size: 12px;
+    margin-bottom: 26px;
+  }
+  .testimonial-item h4{
+    font-size: 15px;
+  }
+  .testimonial-item h6{
+    font-size: 11px;
+  }
+  .ftco-category{
+    margin: -50px;
+  }
+  .f-item-gallery{
+    margin: -42px;
+  }
+  .f-item h6{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .f-item p{
+    font-size: 8px;
+  }
+  .deal-right h3{
+    font-size: 20px !important;
+  }
+  .deal-right h5{
+    font-size: 15px;
+  }
+  .deal-right h2{
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .deal-right p{
+    font-size: 11px;
+  }
+  .deal-right h3{
+    font-size: 28px;
+  }
+  .form-group input{
+    font-size: 11px;
+  }
+  .form-row{
+    margin: -18px 25px;
+  }
+  .btn button{
+    padding: 10px;
+    font-size: 11px;
+  }
+  .d-flex{
+    display: inline-block;
+  }
+  .banner-btn{
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+  .f-item span{
+    height: 50px;
+    width: 50px;
+  }
+  .f-item img{
+    width: 25px;
+    margin-top: 13px;
+  }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/*@media (min-width: 320px) and (max-width: 480px) {
+  
+
+  
+}                
